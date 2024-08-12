@@ -57,7 +57,7 @@ function TaskForm({
           type="text"
         />
         <div className="edit-button-container">
-        <button type="submit">Save</button>
+        <button className="save-edited-task-btn" type="submit">Save</button>
         <button onClick={handleAddTaskClick} type="button">
           Cancel
         </button>
@@ -76,7 +76,7 @@ function TaskForm({
             onChange={(event) => setText(event.target.value)}
           />
           <div  className="edit-button-container no-margin">
-            <button type="submit">Save</button>
+            <button id="create-task-btn" type="submit">Save</button>
 
             <button onClick={handleAddTaskClick} type="button">
               Cancel
